@@ -1,6 +1,20 @@
 # Repo Mining
 
+## [Wiki](repo-mining.wiki/Home.md)
 
+### 
+
+Erstellt von Marvin Mamerow
+
+Test:
+- `git clone https://projectbase.medien.hs-duesseldorf.de/bsalgert/repo-mining.git`
+- Login mit Projectbase Credentials im Git Credentials Manager.
+- Erstellung des Ordners im lokalen Repository.
+- Erstellung der `.md` Dateien innerhalb des Wikis.
+- Hinzufügen der erstellten Dateien innerhalb des Ordners mit `git add .`
+- Überprüfung des Staging Prozesses mit `git status` um zu sehen, welche Dateien hinzugefügt wurden und in welche Branch gepushed wird.
+- Commit Message mithilfe von `git commit -m "#1 Nachricht hinzufügen`
+- Änderungen mithilfe von `git push` in Repo pushen. Alternativ kann es auch mithilfe von `git push -u origin main` in die main Branch gepushed werden.
 
 ## Getting started
 
