@@ -1,6 +1,6 @@
 # Repo Mining
 
-## [Wiki](repo-mining.wiki/Home.md)
+## [Wiki](https://projectbase.medien.hs-duesseldorf.de/bsalgert/repo-mining/-/wikis/home)
 
 ### 
 
