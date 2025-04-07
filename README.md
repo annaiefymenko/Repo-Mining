@@ -18,6 +18,9 @@ Test:
 - `git fetch` Holt alle Änderungen von `main` und ermöglicht eigene bearbeitung.
 - `git pull` Führt `git fetch` + `git merge` in einem Schritt aus.
 - `git merge` kombiniert die Änderungen aus einem anderen Branch mit deinem aktuellen Branch, um beide Versionsstände zusammenzuführen.
+
+Eigenschaften des Wikis
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
