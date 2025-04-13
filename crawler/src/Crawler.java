@@ -7,7 +7,7 @@ public class Crawler {
 /**Methode die Eigenschaften aus eingegebenen Repos ermittelt
  * 
  * @param repoName
- * @return
+ * @return lastModifiedDate
  * @throws IOException
  * @throws InterruptedException
  */
@@ -33,33 +33,43 @@ public class Crawler {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(logProcess.getInputStream())); //Liest die Ausgabe von git log (also das Änderungsdatum) aus dem Prozess
         String lastModifiedDate = reader.readLine();//readLine() holt die erste Zeile – genau das Datum, das wir wollen.
+        reader.close();
         logProcess.waitFor();
 
         return lastModifiedDate;
     }
 
-
-    public static void main(String[] args) {
-    
-     //https://projectbase.medien.hs-duesseldorf.de/bsalgert/repo-mining.git
-    
-    /*
-    try {
-        Scanner scanner = new Scanner(System.in); 
-        String reponame = scanner.nextLine(); //namen des repos eingeben
-        String repoUrl = "https://github.com/" + reponame + ".git"; 
-            String gitDatum = ermittleAenderungsdatum(repoUrl);
-            System.out.println("Letzte Änderung: " + gitDatum);
-        } catch (Exception e) {
-            e.printStackTrace();
+        public static void loescheOrdnerMitShell(String ordnerName) throws IOException, InterruptedException {
+            String os = System.getProperty("os.name").toLowerCase();
+            ProcessBuilder builder;
+        
+            if (os.contains("win")) {
+                builder = new ProcessBuilder("cmd", "/c", "rmdir", "/s", "/q", ordnerName);
+            } else {
+                builder = new ProcessBuilder("rm", "-rf", ordnerName);
+            }
+        
+            Process deleteProcess = builder.start();
+            deleteProcess.waitFor();
         }
-    }
-    */
+        
+    public static void main(String[] args) {
     try {
-            String date = ermittleAenderungsdatum("microsoft/markitdown"); // google/A2A
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Repository Ort Eingeben:"); //Google oder Microsoft
+            String repoOrt = scanner.nextLine();
+            System.out.println("Repository Namen Eingeben:"); //A2A oder markitdown
+            String repoName = scanner.nextLine();
+            scanner.close();
+            String date = ermittleAenderungsdatum(repoOrt + "/" + repoName); // Ort und Name werden automatisch mit einem "/" verbunden
             System.out.println("Letzte Änderung: " + date);
+            loescheOrdnerMitShell(repoName.substring(repoName.indexOf("/") + 1));
+
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+
+
