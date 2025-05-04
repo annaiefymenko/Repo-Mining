@@ -57,6 +57,55 @@ public class GitRepoEigenschaften {
 
         return branchCount;
     }
+    
+    /**4. Eigenschaft: die Anzahl der Dateien ermittelt:
+     * 
+     */
+    	public static int countFiles(String projectPath, String privateToken) {
+    	int fileCount = 0;
+    	try {
+    	String encodedProject = URLEncoder.encode(projectPath, "UTF-8");
+    	String apiUrl = "https://gitlab.com/api/v4/projects/" + encodedProject + "/repository/tree?recursive=true&per_page=100";
+    	URL url = new URL(apiUrl); HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+    	conn.setRequestProperty("PRIVATE-TOKEN", privateToken);
+    	conn.setRequestMethod("GET");
+    	BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+    	String line;
+    	while ((line = in.readLine()) != null) {
+    	if (line.contains(""type":"blob"")) {
+    	fileCount++;
+    	}
+    	}
+    	in.close();
+    	} catch (Exception e) {
+    	System.out.println("Fehler: " + e.getMessage());
+    	}
+    	return fileCount;
+    	}
+    	
+    	/**5. Eigenschaft Programmiersprache ermitteln
+    	 * 
+    	 */
+    	public static String detectLanguage(String code) {
+    		code = code.toLowerCase();
+    		Map> languageKeywords = new HashMap<>();
+    		languageKeywords.put("Python", Arrays.asList("def ", "import ", "print(", "self", "None", "elif", "except"));
+    		languageKeywords.put("Java", Arrays.asList("public static void main", "System.out.println", "class", "import java"));
+    		languageKeywords.put("JavaScript", Arrays.asList("function", "console.log", "var ", "let ", "const ", "=>"));
+    		languageKeywords.put("C", Arrays.asList("#include", "printf(", "scanf(", "int main"));
+    		languageKeywords.put("C++", Arrays.asList("#include", "std::cout", "std::cin", "using namespace std", "class"));
+    		languageKeywords.put("C#", Arrays.asList("using System", "Console.WriteLine", "public class", "static void Main"));
+    		languageKeywords.put("Ruby", Arrays.asList("def ", "puts", "end", "class", "module"));
+    		languageKeywords.put("PHP", Arrays.asList("", "function"));
+    		languageKeywords.put("Go", Arrays.asList("package main", "import "", "func main", "fmt."));
+    		languageKeywords.put("Rust", Arrays.asList("fn main()", "let mut", "println!", "use ", "::"));
+    		for (Map.Entry> entry : languageKeywords.entrySet()) {
+    		for (String keyword : entry.getValue()) {
+    		if (code.contains(keyword.toLowerCase())) { return entry.getKey(); }
+    		}
+    		}
+    		return "Unbekannt";
+    		}
 
     /**
      * Hauptprogramm zum Testen der Methoden
@@ -81,5 +130,21 @@ public class GitRepoEigenschaften {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-}
+        
+
+        //4.eigenschaft testen
+        String project = "deine-gruppe/dein-projekt";
+        // z. B. "mygroup/myrepo"
+        String token = "DEIN_PRIVATE_TOKEN";
+        int count = countFiles(project, token);
+System.out.println("Dateien im Repository: " + count); }
+    
+    
+    //5.Eigenschaft testen
+    String snippet = "public static void main(String[] args) {
+    		System.out.("Hello, World!"); }";
+    		System.out.println("Erkannte Sprache: " + detectLanguage(snippet));
+    		}
+
+
+}//ende klasse gitrepoeigenschaften
