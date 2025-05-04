@@ -1,46 +1,52 @@
 package hsd.crawler;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
+import com.google.gson.*;
+import java.io.*;
+import java.net.*;
+import java.util.*;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import static com.google.gson.JsonParser.*;
 
 public class GitHubAPI {
 
-    public static List<String> werteQuelleAus() throws Exception {
-        List<String> repos = new ArrayList<>();
+    public static List<Repository> holeTopRepos(String token) throws Exception {
+        List<Repository> repos = new ArrayList<>();
+        int maxPages = 5; // z.B 5 Seiten à 100 Repos
 
-        URL url = new URL("https://api.github.com/search/repositories?q=stars:%3E10000&sort=stars&per_page=100");
+        for (int page = 1; page <= maxPages; page++) {
+            String urlString = "https://api.github.com/search/repositories?q=stars:>10000&sort=stars&per_page=100&page=" + page;
+            URL url = new URL(urlString);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
 
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-        connection.setRequestMethod("GET");
-        connection.setRequestProperty("Accept", "application/vnd.github.v3+json");
+            // GitHub API Header
+            connection.setRequestProperty("Accept", "application/vnd.github.v3+json");
+            connection.setRequestProperty("Authorization", "token " + token); // Authentifizierung hier
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        StringBuilder response = new StringBuilder();
-        String inputLine;
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
-        }
-        in.close();
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String inputLine;
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
 
-        JsonParser parser = new JsonParser(); // für ältere Gson-Versionen
-        JsonObject jsonObject = (JsonObject) parser.parse(response.toString());
-        JsonArray items = jsonObject.getAsJsonArray("items");
+            JsonParser parser = new JsonParser();
+            JsonObject root = parser.parse(response.toString()).getAsJsonObject();
+            JsonArray items = root.getAsJsonArray("items");
 
-        for (JsonElement item : items) {
-            JsonObject repo = item.getAsJsonObject();
-            String fullName = repo.get("full_name").getAsString();
-            repos.add(fullName);
+            for (JsonElement item : items) {
+                JsonObject repoJson = item.getAsJsonObject();
+                String name = repoJson.get("full_name").getAsString();
+                String language = repoJson.get("language").isJsonNull() ? "Unbekannt" : repoJson.get("language").getAsString();
+                int stars = repoJson.get("stargazers_count").getAsInt();
+                int forks = repoJson.get("forks_count").getAsInt();
+
+                repos.add(new Repository(name, language, stars, forks));
+            }
         }
 
         return repos;
     }
+
 }

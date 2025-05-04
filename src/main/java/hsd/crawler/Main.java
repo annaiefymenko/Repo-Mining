@@ -1,35 +1,40 @@
 package hsd.crawler;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.io.FileWriter;
 import java.util.List;
 
 public class Main {
-
     public static void main(String[] args) {
         try {
-            // Teil 1: Lokales Repo analysieren
-            String lokalerRepoPfad = "markitdown";
+            System.out.println("Verbinde zur GitHub API...");
 
-            String erstesCommit = GitRepoEigenschaften.ermittleErstesCommitDatum(lokalerRepoPfad);
-            System.out.println("Erstes Commit am: " + erstesCommit);
+            String token = "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";
+            List<Repository> repos = GitHubAPI.holeTopRepos(token);
+            System.out.println("Anzahl gefundener Repos: " + repos.size());
 
-            int anzahlCommits = GitRepoEigenschaften.ermittleAnzahlCommits(lokalerRepoPfad);
-            System.out.println("Anzahl der Commits: " + anzahlCommits);
-
-            int anzahlBranches = GitRepoEigenschaften.ermittleAnzahlBranches(lokalerRepoPfad);
-            System.out.println("Anzahl der Branches: " + anzahlBranches);
-
-            String snippet = "public static void main(String[] args) { System.out.println(\"Hello, World!\"); }";
-            System.out.println("Erkannte Sprache: " + GitRepoEigenschaften.detectLanguage(snippet));
-
-            // Teil 2: GitHub populäre Repos abrufen
-            List<String> repos = GitHubAPI.werteQuelleAus();
-            System.out.println("Top Repositories mit >10.000 Stars:");
-            for (String repo : repos) {
-                System.out.println(repo);
+            for (Repository repo : repos) {
+                GitHubAnalyzer.analysiere(repo);
             }
 
+            // JSON exportieren
+            exportiereAlsJson(repos);
+
         } catch (Exception e) {
+            System.err.println("Fehler beim Ausführen: " + e.getMessage());
             e.printStackTrace();
+        }
+    }
+
+    private static void exportiereAlsJson(List<Repository> repos) {
+        try (FileWriter writer = new FileWriter("repos.json")) {
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            gson.toJson(repos, writer);
+            System.out.println("✅ JSON-Datei erstellt: repos.json");
+        } catch (Exception e) {
+            System.err.println("Fehler beim Schreiben der JSON-Datei: " + e.getMessage());
         }
     }
 }

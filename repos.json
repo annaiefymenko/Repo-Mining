@@ -1,0 +1,3002 @@
+[
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "language": "TypeScript",
+    "stars": 417525,
+    "forks": 39996
+  },
+  {
+    "name": "codecrafters-io/build-your-own-x",
+    "language": "Markdown",
+    "stars": 377691,
+    "forks": 35159
+  },
+  {
+    "name": "sindresorhus/awesome",
+    "language": "Unbekannt",
+    "stars": 358880,
+    "forks": 29029
+  },
+  {
+    "name": "EbookFoundation/free-programming-books",
+    "language": "HTML",
+    "stars": 356162,
+    "forks": 63282
+  },
+  {
+    "name": "public-apis/public-apis",
+    "language": "Python",
+    "stars": 338558,
+    "forks": 35719
+  },
+  {
+    "name": "kamranahmedse/developer-roadmap",
+    "language": "TypeScript",
+    "stars": 317279,
+    "forks": 41164
+  },
+  {
+    "name": "jwasham/coding-interview-university",
+    "language": "Unbekannt",
+    "stars": 316830,
+    "forks": 78674
+  },
+  {
+    "name": "donnemartin/system-design-primer",
+    "language": "Python",
+    "stars": 298032,
+    "forks": 49517
+  },
+  {
+    "name": "996icu/996.ICU",
+    "language": "Unbekannt",
+    "stars": 270840,
+    "forks": 21094
+  },
+  {
+    "name": "vinta/awesome-python",
+    "language": "Python",
+    "stars": 242321,
+    "forks": 25613
+  },
+  {
+    "name": "facebook/react",
+    "language": "JavaScript",
+    "stars": 235142,
+    "forks": 48382
+  },
+  {
+    "name": "awesome-selfhosted/awesome-selfhosted",
+    "language": "Unbekannt",
+    "stars": 227131,
+    "forks": 10608
+  },
+  {
+    "name": "practical-tutorials/project-based-learning",
+    "language": "Unbekannt",
+    "stars": 226578,
+    "forks": 29600
+  },
+  {
+    "name": "vuejs/vue",
+    "language": "TypeScript",
+    "stars": 208806,
+    "forks": 33741
+  },
+  {
+    "name": "TheAlgorithms/Python",
+    "language": "Python",
+    "stars": 200135,
+    "forks": 46684
+  },
+  {
+    "name": "torvalds/linux",
+    "language": "C",
+    "stars": 192831,
+    "forks": 55726
+  },
+  {
+    "name": "trekhleb/javascript-algorithms",
+    "language": "JavaScript",
+    "stars": 191133,
+    "forks": 30656
+  },
+  {
+    "name": "tensorflow/tensorflow",
+    "language": "C++",
+    "stars": 189762,
+    "forks": 74657
+  },
+  {
+    "name": "getify/You-Dont-Know-JS",
+    "language": "Unbekannt",
+    "stars": 181959,
+    "forks": 33617
+  },
+  {
+    "name": "CyC2018/CS-Notes",
+    "language": "Unbekannt",
+    "stars": 180014,
+    "forks": 51202
+  },
+  {
+    "name": "ossu/computer-science",
+    "language": "HTML",
+    "stars": 178877,
+    "forks": 22676
+  },
+  {
+    "name": "ohmyzsh/ohmyzsh",
+    "language": "Shell",
+    "stars": 178121,
+    "forks": 26064
+  },
+  {
+    "name": "Significant-Gravitas/AutoGPT",
+    "language": "Python",
+    "stars": 175009,
+    "forks": 45667
+  },
+  {
+    "name": "twbs/bootstrap",
+    "language": "MDX",
+    "stars": 172277,
+    "forks": 79080
+  },
+  {
+    "name": "microsoft/vscode",
+    "language": "TypeScript",
+    "stars": 170694,
+    "forks": 31953
+  },
+  {
+    "name": "flutter/flutter",
+    "language": "Dart",
+    "stars": 170064,
+    "forks": 28451
+  },
+  {
+    "name": "trimstray/the-book-of-secret-knowledge",
+    "language": "Unbekannt",
+    "stars": 168169,
+    "forks": 10531
+  },
+  {
+    "name": "github/gitignore",
+    "language": "Unbekannt",
+    "stars": 166206,
+    "forks": 83087
+  },
+  {
+    "name": "jackfrued/Python-100-Days",
+    "language": "Jupyter Notebook",
+    "stars": 165724,
+    "forks": 53698
+  },
+  {
+    "name": "jlevy/the-art-of-command-line",
+    "language": "Unbekannt",
+    "stars": 155835,
+    "forks": 14653
+  },
+  {
+    "name": "AUTOMATIC1111/stable-diffusion-webui",
+    "language": "Python",
+    "stars": 152005,
+    "forks": 28275
+  },
+  {
+    "name": "Snailclimb/JavaGuide",
+    "language": "Java",
+    "stars": 149452,
+    "forks": 45817
+  },
+  {
+    "name": "airbnb/javascript",
+    "language": "JavaScript",
+    "stars": 146660,
+    "forks": 26745
+  },
+  {
+    "name": "huggingface/transformers",
+    "language": "Python",
+    "stars": 143815,
+    "forks": 28839
+  },
+  {
+    "name": "avelino/awesome-go",
+    "language": "Go",
+    "stars": 142987,
+    "forks": 12264
+  },
+  {
+    "name": "ollama/ollama",
+    "language": "Go",
+    "stars": 139445,
+    "forks": 11639
+  },
+  {
+    "name": "ytdl-org/youtube-dl",
+    "language": "Python",
+    "stars": 135478,
+    "forks": 10321
+  },
+  {
+    "name": "massgravel/Microsoft-Activation-Scripts",
+    "language": "Batchfile",
+    "stars": 133302,
+    "forks": 12947
+  },
+  {
+    "name": "vercel/next.js",
+    "language": "JavaScript",
+    "stars": 131566,
+    "forks": 28305
+  },
+  {
+    "name": "labuladong/fucking-algorithm",
+    "language": "Markdown",
+    "stars": 127780,
+    "forks": 23356
+  },
+  {
+    "name": "golang/go",
+    "language": "Go",
+    "stars": 127564,
+    "forks": 18010
+  },
+  {
+    "name": "yangshun/tech-interview-handbook",
+    "language": "TypeScript",
+    "stars": 125930,
+    "forks": 15366
+  },
+  {
+    "name": "f/awesome-chatgpt-prompts",
+    "language": "JavaScript",
+    "stars": 123888,
+    "forks": 16586
+  },
+  {
+    "name": "Chalarangelo/30-seconds-of-code",
+    "language": "JavaScript",
+    "stars": 123538,
+    "forks": 12156
+  },
+  {
+    "name": "facebook/react-native",
+    "language": "C++",
+    "stars": 121792,
+    "forks": 24623
+  },
+  {
+    "name": "Genymobile/scrcpy",
+    "language": "C",
+    "stars": 121513,
+    "forks": 11439
+  },
+  {
+    "name": "microsoft/PowerToys",
+    "language": "C#",
+    "stars": 117980,
+    "forks": 6971
+  },
+  {
+    "name": "electron/electron",
+    "language": "C++",
+    "stars": 116618,
+    "forks": 16016
+  },
+  {
+    "name": "kubernetes/kubernetes",
+    "language": "Go",
+    "stars": 114869,
+    "forks": 40506
+  },
+  {
+    "name": "justjavac/free-programming-books-zh_CN",
+    "language": "Unbekannt",
+    "stars": 113570,
+    "forks": 28304
+  },
+  {
+    "name": "krahets/hello-algo",
+    "language": "Java",
+    "stars": 112130,
+    "forks": 13950
+  },
+  {
+    "name": "nodejs/node",
+    "language": "JavaScript",
+    "stars": 110969,
+    "forks": 31448
+  },
+  {
+    "name": "yt-dlp/yt-dlp",
+    "language": "Python",
+    "stars": 110605,
+    "forks": 8684
+  },
+  {
+    "name": "d3/d3",
+    "language": "Shell",
+    "stars": 110523,
+    "forks": 22871
+  },
+  {
+    "name": "langchain-ai/langchain",
+    "language": "Jupyter Notebook",
+    "stars": 106806,
+    "forks": 17352
+  },
+  {
+    "name": "axios/axios",
+    "language": "JavaScript",
+    "stars": 106781,
+    "forks": 11135
+  },
+  {
+    "name": "mrdoob/three.js",
+    "language": "JavaScript",
+    "stars": 106025,
+    "forks": 35729
+  },
+  {
+    "name": "microsoft/TypeScript",
+    "language": "TypeScript",
+    "stars": 104280,
+    "forks": 12818
+  },
+  {
+    "name": "521xueweihan/HelloGitHub",
+    "language": "Python",
+    "stars": 103305,
+    "forks": 9926
+  },
+  {
+    "name": "rust-lang/rust",
+    "language": "Rust",
+    "stars": 103225,
+    "forks": 13312
+  },
+  {
+    "name": "facebook/create-react-app",
+    "language": "JavaScript",
+    "stars": 103182,
+    "forks": 27009
+  },
+  {
+    "name": "denoland/deno",
+    "language": "Rust",
+    "stars": 102828,
+    "forks": 5570
+  },
+  {
+    "name": "goldbergyoni/nodebestpractices",
+    "language": "Dockerfile",
+    "stars": 102489,
+    "forks": 10423
+  },
+  {
+    "name": "excalidraw/excalidraw",
+    "language": "TypeScript",
+    "stars": 98931,
+    "forks": 9624
+  },
+  {
+    "name": "microsoft/terminal",
+    "language": "C++",
+    "stars": 97981,
+    "forks": 8551
+  },
+  {
+    "name": "angular/angular",
+    "language": "TypeScript",
+    "stars": 97646,
+    "forks": 26165
+  },
+  {
+    "name": "godotengine/godot",
+    "language": "C++",
+    "stars": 96823,
+    "forks": 22301
+  },
+  {
+    "name": "deepseek-ai/DeepSeek-V3",
+    "language": "Python",
+    "stars": 96409,
+    "forks": 15686
+  },
+  {
+    "name": "langgenius/dify",
+    "language": "TypeScript",
+    "stars": 95549,
+    "forks": 14288
+  },
+  {
+    "name": "mui/material-ui",
+    "language": "TypeScript",
+    "stars": 95515,
+    "forks": 32558
+  },
+  {
+    "name": "ripienaar/free-for-dev",
+    "language": "HTML",
+    "stars": 95280,
+    "forks": 10305
+  },
+  {
+    "name": "ant-design/ant-design",
+    "language": "TypeScript",
+    "stars": 94469,
+    "forks": 52164
+  },
+  {
+    "name": "fatedier/frp",
+    "language": "Go",
+    "stars": 93430,
+    "forks": 13984
+  },
+  {
+    "name": "open-webui/open-webui",
+    "language": "JavaScript",
+    "stars": 93060,
+    "forks": 11788
+  },
+  {
+    "name": "iptv-org/iptv",
+    "language": "TypeScript",
+    "stars": 92951,
+    "forks": 3451
+  },
+  {
+    "name": "ryanmcdermott/clean-code-javascript",
+    "language": "JavaScript",
+    "stars": 92864,
+    "forks": 12416
+  },
+  {
+    "name": "papers-we-love/papers-we-love",
+    "language": "Shell",
+    "stars": 92836,
+    "forks": 5931
+  },
+  {
+    "name": "tauri-apps/tauri",
+    "language": "Rust",
+    "stars": 92092,
+    "forks": 2834
+  },
+  {
+    "name": "Hack-with-Github/Awesome-Hacking",
+    "language": "Unbekannt",
+    "stars": 91983,
+    "forks": 9253
+  },
+  {
+    "name": "nvbn/thefuck",
+    "language": "Python",
+    "stars": 91741,
+    "forks": 3685
+  },
+  {
+    "name": "iluwatar/java-design-patterns",
+    "language": "Java",
+    "stars": 91468,
+    "forks": 26946
+  },
+  {
+    "name": "puppeteer/puppeteer",
+    "language": "TypeScript",
+    "stars": 90568,
+    "forks": 9201
+  },
+  {
+    "name": "pytorch/pytorch",
+    "language": "Python",
+    "stars": 89627,
+    "forks": 24042
+  },
+  {
+    "name": "PanJiaChen/vue-element-admin",
+    "language": "Vue",
+    "stars": 89258,
+    "forks": 30587
+  },
+  {
+    "name": "neovim/neovim",
+    "language": "Vim Script",
+    "stars": 89169,
+    "forks": 6059
+  },
+  {
+    "name": "deepseek-ai/DeepSeek-R1",
+    "language": "Unbekannt",
+    "stars": 89038,
+    "forks": 11515
+  },
+  {
+    "name": "n8n-io/n8n",
+    "language": "TypeScript",
+    "stars": 88644,
+    "forks": 24238
+  },
+  {
+    "name": "microsoft/Web-Dev-For-Beginners",
+    "language": "JavaScript",
+    "stars": 87723,
+    "forks": 13245
+  },
+  {
+    "name": "rustdesk/rustdesk",
+    "language": "Rust",
+    "stars": 87701,
+    "forks": 12467
+  },
+  {
+    "name": "tailwindlabs/tailwindcss",
+    "language": "TypeScript",
+    "stars": 87553,
+    "forks": 4507
+  },
+  {
+    "name": "mtdvio/every-programmer-should-know",
+    "language": "Unbekannt",
+    "stars": 87017,
+    "forks": 8006
+  },
+  {
+    "name": "storybookjs/storybook",
+    "language": "TypeScript",
+    "stars": 86538,
+    "forks": 9532
+  },
+  {
+    "name": "shadcn-ui/ui",
+    "language": "TypeScript",
+    "stars": 86370,
+    "forks": 5846
+  },
+  {
+    "name": "nvm-sh/nvm",
+    "language": "Shell",
+    "stars": 84325,
+    "forks": 8745
+  },
+  {
+    "name": "fastapi/fastapi",
+    "language": "Python",
+    "stars": 84020,
+    "forks": 7293
+  },
+  {
+    "name": "django/django",
+    "language": "Python",
+    "stars": 83414,
+    "forks": 32549
+  },
+  {
+    "name": "bitcoin/bitcoin",
+    "language": "C++",
+    "stars": 83356,
+    "forks": 37170
+  },
+  {
+    "name": "ChatGPTNextWeb/NextChat",
+    "language": "TypeScript",
+    "stars": 83166,
+    "forks": 61202
+  },
+  {
+    "name": "florinpop17/app-ideas",
+    "language": "Unbekannt",
+    "stars": 83097,
+    "forks": 9688
+  },
+  {
+    "name": "Anduin2017/HowToCook",
+    "language": "Dockerfile",
+    "stars": 82585,
+    "forks": 9826
+  },
+  {
+    "name": "jaywcjlove/awesome-mac",
+    "language": "JavaScript",
+    "stars": 82557,
+    "forks": 6499
+  },
+  {
+    "name": "sveltejs/svelte",
+    "language": "JavaScript",
+    "stars": 82475,
+    "forks": 4499
+  },
+  {
+    "name": "microsoft/generative-ai-for-beginners",
+    "language": "Jupyter Notebook",
+    "stars": 82194,
+    "forks": 42197
+  },
+  {
+    "name": "gin-gonic/gin",
+    "language": "Go",
+    "stars": 82065,
+    "forks": 8184
+  },
+  {
+    "name": "supabase/supabase",
+    "language": "TypeScript",
+    "stars": 82047,
+    "forks": 8470
+  },
+  {
+    "name": "opencv/opencv",
+    "language": "C++",
+    "stars": 81985,
+    "forks": 56152
+  },
+  {
+    "name": "animate-css/animate.css",
+    "language": "CSS",
+    "stars": 81642,
+    "forks": 16218
+  },
+  {
+    "name": "gothinkster/realworld",
+    "language": "TypeScript",
+    "stars": 81520,
+    "forks": 7432
+  },
+  {
+    "name": "openai/whisper",
+    "language": "Python",
+    "stars": 81100,
+    "forks": 9746
+  },
+  {
+    "name": "laravel/laravel",
+    "language": "Blade",
+    "stars": 80784,
+    "forks": 24344
+  },
+  {
+    "name": "gohugoio/hugo",
+    "language": "Go",
+    "stars": 80393,
+    "forks": 7805
+  },
+  {
+    "name": "macrozheng/mall",
+    "language": "Java",
+    "stars": 80130,
+    "forks": 29230
+  },
+  {
+    "name": "ggml-org/llama.cpp",
+    "language": "C++",
+    "stars": 79206,
+    "forks": 11606
+  },
+  {
+    "name": "2dust/v2rayN",
+    "language": "C#",
+    "stars": 79146,
+    "forks": 12572
+  },
+  {
+    "name": "tonsky/FiraCode",
+    "language": "Clojure",
+    "stars": 78880,
+    "forks": 3136
+  },
+  {
+    "name": "mermaid-js/mermaid",
+    "language": "TypeScript",
+    "stars": 78827,
+    "forks": 7461
+  },
+  {
+    "name": "home-assistant/core",
+    "language": "Python",
+    "stars": 78434,
+    "forks": 33507
+  },
+  {
+    "name": "oven-sh/bun",
+    "language": "Zig",
+    "stars": 77815,
+    "forks": 3056
+  },
+  {
+    "name": "doocs/advanced-java",
+    "language": "Java",
+    "stars": 77546,
+    "forks": 19179
+  },
+  {
+    "name": "tensorflow/models",
+    "language": "Python",
+    "stars": 77509,
+    "forks": 45613
+  },
+  {
+    "name": "3b1b/manim",
+    "language": "Python",
+    "stars": 77157,
+    "forks": 6671
+  },
+  {
+    "name": "spring-projects/spring-boot",
+    "language": "Java",
+    "stars": 77000,
+    "forks": 41143
+  },
+  {
+    "name": "comfyanonymous/ComfyUI",
+    "language": "Python",
+    "stars": 75889,
+    "forks": 8285
+  },
+  {
+    "name": "MisterBooo/LeetCodeAnimation",
+    "language": "Java",
+    "stars": 75877,
+    "forks": 13988
+  },
+  {
+    "name": "bregman-arie/devops-exercises",
+    "language": "Python",
+    "stars": 75605,
+    "forks": 16837
+  },
+  {
+    "name": "FortAwesome/Font-Awesome",
+    "language": "JavaScript",
+    "stars": 75177,
+    "forks": 12213
+  },
+  {
+    "name": "DopplerHQ/awesome-interview-questions",
+    "language": "Unbekannt",
+    "stars": 74677,
+    "forks": 9075
+  },
+  {
+    "name": "netdata/netdata",
+    "language": "C",
+    "stars": 74457,
+    "forks": 6051
+  },
+  {
+    "name": "typicode/json-server",
+    "language": "JavaScript",
+    "stars": 74143,
+    "forks": 7131
+  },
+  {
+    "name": "MunGell/awesome-for-beginners",
+    "language": "Unbekannt",
+    "stars": 73644,
+    "forks": 7244
+  },
+  {
+    "name": "nomic-ai/gpt4all",
+    "language": "C++",
+    "stars": 73246,
+    "forks": 7983
+  },
+  {
+    "name": "anuraghazra/github-readme-stats",
+    "language": "JavaScript",
+    "stars": 72967,
+    "forks": 24602
+  },
+  {
+    "name": "vuejs/awesome-vue",
+    "language": "Unbekannt",
+    "stars": 72842,
+    "forks": 9471
+  },
+  {
+    "name": "fighting41love/funNLP",
+    "language": "Python",
+    "stars": 72838,
+    "forks": 14834
+  },
+  {
+    "name": "elastic/elasticsearch",
+    "language": "Java",
+    "stars": 72552,
+    "forks": 25194
+  },
+  {
+    "name": "vitejs/vite",
+    "language": "TypeScript",
+    "stars": 72480,
+    "forks": 6669
+  },
+  {
+    "name": "microsoft/playwright",
+    "language": "TypeScript",
+    "stars": 72336,
+    "forks": 4118
+  },
+  {
+    "name": "microsoft/ML-For-Beginners",
+    "language": "HTML",
+    "stars": 72099,
+    "forks": 15600
+  },
+  {
+    "name": "ByteByteGoHq/system-design-101",
+    "language": "Unbekannt",
+    "stars": 72010,
+    "forks": 7661
+  },
+  {
+    "name": "coder/code-server",
+    "language": "TypeScript",
+    "stars": 71513,
+    "forks": 5922
+  },
+  {
+    "name": "hoppscotch/hoppscotch",
+    "language": "TypeScript",
+    "stars": 71499,
+    "forks": 4902
+  },
+  {
+    "name": "nestjs/nest",
+    "language": "TypeScript",
+    "stars": 70703,
+    "forks": 7848
+  },
+  {
+    "name": "CompVis/stable-diffusion",
+    "language": "Jupyter Notebook",
+    "stars": 70527,
+    "forks": 10413
+  },
+  {
+    "name": "thedaviddias/Front-End-Checklist",
+    "language": "Unbekannt",
+    "stars": 69990,
+    "forks": 6487
+  },
+  {
+    "name": "syncthing/syncthing",
+    "language": "Go",
+    "stars": 69902,
+    "forks": 4502
+  },
+  {
+    "name": "junegunn/fzf",
+    "language": "Go",
+    "stars": 69866,
+    "forks": 2505
+  },
+  {
+    "name": "abi/screenshot-to-code",
+    "language": "Python",
+    "stars": 69817,
+    "forks": 8619
+  },
+  {
+    "name": "moby/moby",
+    "language": "Go",
+    "stars": 69668,
+    "forks": 18744
+  },
+  {
+    "name": "pallets/flask",
+    "language": "Python",
+    "stars": 69460,
+    "forks": 16379
+  },
+  {
+    "name": "redis/redis",
+    "language": "C",
+    "stars": 68990,
+    "forks": 23993
+  },
+  {
+    "name": "d2l-ai/d2l-zh",
+    "language": "Python",
+    "stars": 68966,
+    "forks": 11602
+  },
+  {
+    "name": "hakimel/reveal.js",
+    "language": "JavaScript",
+    "stars": 68813,
+    "forks": 16722
+  },
+  {
+    "name": "louislam/uptime-kuma",
+    "language": "JavaScript",
+    "stars": 68672,
+    "forks": 6030
+  },
+  {
+    "name": "Developer-Y/cs-video-courses",
+    "language": "Unbekannt",
+    "stars": 68624,
+    "forks": 9287
+  },
+  {
+    "name": "swiftlang/swift",
+    "language": "C++",
+    "stars": 68531,
+    "forks": 10462
+  },
+  {
+    "name": "base/node",
+    "language": "Shell",
+    "stars": 68498,
+    "forks": 2687
+  },
+  {
+    "name": "binary-husky/gpt_academic",
+    "language": "Python",
+    "stars": 68333,
+    "forks": 8338
+  },
+  {
+    "name": "josephmisiti/awesome-machine-learning",
+    "language": "Python",
+    "stars": 67871,
+    "forks": 14886
+  },
+  {
+    "name": "enaqx/awesome-react",
+    "language": "Unbekannt",
+    "stars": 67862,
+    "forks": 7336
+  },
+  {
+    "name": "grafana/grafana",
+    "language": "TypeScript",
+    "stars": 67809,
+    "forks": 12590
+  },
+  {
+    "name": "protocolbuffers/protobuf",
+    "language": "C++",
+    "stars": 67446,
+    "forks": 15694
+  },
+  {
+    "name": "expressjs/express",
+    "language": "JavaScript",
+    "stars": 66902,
+    "forks": 18372
+  },
+  {
+    "name": "sdmg15/Best-websites-a-programmer-should-visit",
+    "language": "Unbekannt",
+    "stars": 66708,
+    "forks": 8117
+  },
+  {
+    "name": "python/cpython",
+    "language": "Python",
+    "stars": 66708,
+    "forks": 31780
+  },
+  {
+    "name": "tesseract-ocr/tesseract",
+    "language": "C++",
+    "stars": 66569,
+    "forks": 9858
+  },
+  {
+    "name": "strapi/strapi",
+    "language": "TypeScript",
+    "stars": 66466,
+    "forks": 8521
+  },
+  {
+    "name": "ventoy/Ventoy",
+    "language": "C",
+    "stars": 66398,
+    "forks": 4249
+  },
+  {
+    "name": "apache/superset",
+    "language": "Jupyter Notebook",
+    "stars": 66022,
+    "forks": 14940
+  },
+  {
+    "name": "chartjs/Chart.js",
+    "language": "JavaScript",
+    "stars": 65815,
+    "forks": 11946
+  },
+  {
+    "name": "webpack/webpack",
+    "language": "JavaScript",
+    "stars": 65253,
+    "forks": 9079
+  },
+  {
+    "name": "ocornut/imgui",
+    "language": "C++",
+    "stars": 65197,
+    "forks": 10827
+  },
+  {
+    "name": "immich-app/immich",
+    "language": "TypeScript",
+    "stars": 65133,
+    "forks": 3430
+  },
+  {
+    "name": "swisskyrepo/PayloadsAllTheThings",
+    "language": "Python",
+    "stars": 65133,
+    "forks": 15301
+  },
+  {
+    "name": "leonardomso/33-js-concepts",
+    "language": "JavaScript",
+    "stars": 65120,
+    "forks": 9098
+  },
+  {
+    "name": "ansible/ansible",
+    "language": "Python",
+    "stars": 64894,
+    "forks": 24017
+  },
+  {
+    "name": "sherlock-project/sherlock",
+    "language": "Python",
+    "stars": 64177,
+    "forks": 7437
+  },
+  {
+    "name": "xtekky/gpt4free",
+    "language": "Python",
+    "stars": 64163,
+    "forks": 13628
+  },
+  {
+    "name": "kdn251/interviews",
+    "language": "Java",
+    "stars": 64111,
+    "forks": 12914
+  },
+  {
+    "name": "caddyserver/caddy",
+    "language": "Go",
+    "stars": 64018,
+    "forks": 4280
+  },
+  {
+    "name": "obsproject/obs-studio",
+    "language": "C",
+    "stars": 63920,
+    "forks": 8379
+  },
+  {
+    "name": "lydiahallie/javascript-questions",
+    "language": "Unbekannt",
+    "stars": 63875,
+    "forks": 9084
+  },
+  {
+    "name": "openai/openai-cookbook",
+    "language": "MDX",
+    "stars": 63725,
+    "forks": 10364
+  },
+  {
+    "name": "Eugeny/tabby",
+    "language": "TypeScript",
+    "stars": 63474,
+    "forks": 3594
+  },
+  {
+    "name": "apache/echarts",
+    "language": "TypeScript",
+    "stars": 63417,
+    "forks": 19716
+  },
+  {
+    "name": "fffaraz/awesome-cpp",
+    "language": "Unbekannt",
+    "stars": 63404,
+    "forks": 7960
+  },
+  {
+    "name": "twitter/the-algorithm",
+    "language": "Scala",
+    "stars": 63145,
+    "forks": 12160
+  },
+  {
+    "name": "PKUFlyingPig/cs-self-learning",
+    "language": "HTML",
+    "stars": 63129,
+    "forks": 7325
+  },
+  {
+    "name": "awesomedata/awesome-public-datasets",
+    "language": "Unbekannt",
+    "stars": 63038,
+    "forks": 10113
+  },
+  {
+    "name": "keras-team/keras",
+    "language": "Python",
+    "stars": 62949,
+    "forks": 19575
+  },
+  {
+    "name": "kelseyhightower/nocode",
+    "language": "Dockerfile",
+    "stars": 62645,
+    "forks": 4742
+  },
+  {
+    "name": "AppFlowy-IO/AppFlowy",
+    "language": "Dart",
+    "stars": 62617,
+    "forks": 4215
+  },
+  {
+    "name": "danielmiessler/SecLists",
+    "language": "PHP",
+    "stars": 62560,
+    "forks": 24312
+  },
+  {
+    "name": "resume/resume.github.com",
+    "language": "JavaScript",
+    "stars": 62401,
+    "forks": 1359
+  },
+  {
+    "name": "FuelLabs/sway",
+    "language": "Rust",
+    "stars": 62312,
+    "forks": 5389
+  },
+  {
+    "name": "socketio/socket.io",
+    "language": "TypeScript",
+    "stars": 61978,
+    "forks": 10145
+  },
+  {
+    "name": "scikit-learn/scikit-learn",
+    "language": "Python",
+    "stars": 61930,
+    "forks": 25787
+  },
+  {
+    "name": "chrislgarry/Apollo-11",
+    "language": "Assembly",
+    "stars": 61725,
+    "forks": 7192
+  },
+  {
+    "name": "binhnguyennus/awesome-scalability",
+    "language": "Unbekannt",
+    "stars": 61723,
+    "forks": 6236
+  },
+  {
+    "name": "TheAlgorithms/Java",
+    "language": "Java",
+    "stars": 61513,
+    "forks": 19890
+  },
+  {
+    "name": "reduxjs/redux",
+    "language": "TypeScript",
+    "stars": 61177,
+    "forks": 15243
+  },
+  {
+    "name": "Alvin9999/new-pac",
+    "language": "Python",
+    "stars": 61121,
+    "forks": 9919
+  },
+  {
+    "name": "nektos/act",
+    "language": "Go",
+    "stars": 60954,
+    "forks": 1574
+  },
+  {
+    "name": "localsend/localsend",
+    "language": "Dart",
+    "stars": 60813,
+    "forks": 3242
+  },
+  {
+    "name": "sindresorhus/awesome-nodejs",
+    "language": "Unbekannt",
+    "stars": 60803,
+    "forks": 6020
+  },
+  {
+    "name": "bradtraversy/design-resources-for-developers",
+    "language": "Unbekannt",
+    "stars": 60621,
+    "forks": 11712
+  },
+  {
+    "name": "labmlai/annotated_deep_learning_paper_implementations",
+    "language": "Python",
+    "stars": 60447,
+    "forks": 6102
+  },
+  {
+    "name": "atom/atom",
+    "language": "JavaScript",
+    "stars": 60431,
+    "forks": 17348
+  },
+  {
+    "name": "lodash/lodash",
+    "language": "JavaScript",
+    "stars": 60415,
+    "forks": 7068
+  },
+  {
+    "name": "prakhar1989/awesome-courses",
+    "language": "Unbekannt",
+    "stars": 60297,
+    "forks": 8202
+  },
+  {
+    "name": "h5bp/Front-end-Developer-Interview-Questions",
+    "language": "Nunjucks",
+    "stars": 60284,
+    "forks": 11096
+  },
+  {
+    "name": "xingshaocheng/architect-awesome",
+    "language": "Unbekannt",
+    "stars": 60173,
+    "forks": 17806
+  },
+  {
+    "name": "lobehub/lobe-chat",
+    "language": "TypeScript",
+    "stars": 60105,
+    "forks": 12667
+  },
+  {
+    "name": "hacksider/Deep-Live-Cam",
+    "language": "Python",
+    "stars": 60014,
+    "forks": 8419
+  },
+  {
+    "name": "adam-p/markdown-here",
+    "language": "JavaScript",
+    "stars": 59896,
+    "forks": 11223
+  },
+  {
+    "name": "facebook/docusaurus",
+    "language": "TypeScript",
+    "stars": 59699,
+    "forks": 9021
+  },
+  {
+    "name": "jesseduffield/lazygit",
+    "language": "Go",
+    "stars": 59668,
+    "forks": 2039
+  },
+  {
+    "name": "juliangarnier/anime",
+    "language": "JavaScript",
+    "stars": 59539,
+    "forks": 4014
+  },
+  {
+    "name": "jquery/jquery",
+    "language": "JavaScript",
+    "stars": 59505,
+    "forks": 20613
+  },
+  {
+    "name": "OpenInterpreter/open-interpreter",
+    "language": "Python",
+    "stars": 59272,
+    "forks": 5048
+  },
+  {
+    "name": "browser-use/browser-use",
+    "language": "Python",
+    "stars": 58934,
+    "forks": 6397
+  },
+  {
+    "name": "localstack/localstack",
+    "language": "Python",
+    "stars": 58804,
+    "forks": 4144
+  },
+  {
+    "name": "shadowsocks/shadowsocks-windows",
+    "language": "C#",
+    "stars": 58793,
+    "forks": 16362
+  },
+  {
+    "name": "angular/angular.js",
+    "language": "JavaScript",
+    "stars": 58747,
+    "forks": 27400
+  },
+  {
+    "name": "alacritty/alacritty",
+    "language": "Rust",
+    "stars": 58667,
+    "forks": 3105
+  },
+  {
+    "name": "langflow-ai/langflow",
+    "language": "Python",
+    "stars": 58578,
+    "forks": 6233
+  },
+  {
+    "name": "prometheus/prometheus",
+    "language": "Go",
+    "stars": 58378,
+    "forks": 9539
+  },
+  {
+    "name": "meta-llama/llama",
+    "language": "Python",
+    "stars": 58186,
+    "forks": 9760
+  },
+  {
+    "name": "rust-lang/rustlings",
+    "language": "Rust",
+    "stars": 58008,
+    "forks": 10563
+  },
+  {
+    "name": "spring-projects/spring-framework",
+    "language": "Java",
+    "stars": 57971,
+    "forks": 38466
+  },
+  {
+    "name": "zed-industries/zed",
+    "language": "Rust",
+    "stars": 57961,
+    "forks": 4007
+  },
+  {
+    "name": "FuelLabs/fuel-core",
+    "language": "Rust",
+    "stars": 57679,
+    "forks": 2849
+  },
+  {
+    "name": "ryanoasis/nerd-fonts",
+    "language": "CSS",
+    "stars": 57604,
+    "forks": 3744
+  },
+  {
+    "name": "Stirling-Tools/Stirling-PDF",
+    "language": "Java",
+    "stars": 57514,
+    "forks": 4833
+  },
+  {
+    "name": "unionlabs/union",
+    "language": "Rust",
+    "stars": 56976,
+    "forks": 2858
+  },
+  {
+    "name": "nuxt/nuxt",
+    "language": "TypeScript",
+    "stars": 56949,
+    "forks": 5246
+  },
+  {
+    "name": "h5bp/html5-boilerplate",
+    "language": "JavaScript",
+    "stars": 56922,
+    "forks": 12287
+  },
+  {
+    "name": "clash-verge-rev/clash-verge-rev",
+    "language": "TypeScript",
+    "stars": 56857,
+    "forks": 4398
+  },
+  {
+    "name": "rails/rails",
+    "language": "Ruby",
+    "stars": 56830,
+    "forks": 21836
+  },
+  {
+    "name": "NationalSecurityAgency/ghidra",
+    "language": "Java",
+    "stars": 56703,
+    "forks": 6336
+  },
+  {
+    "name": "ruanyf/weekly",
+    "language": "Unbekannt",
+    "stars": 56004,
+    "forks": 3230
+  },
+  {
+    "name": "microsoft/markitdown",
+    "language": "Python",
+    "stars": 55923,
+    "forks": 2838
+  },
+  {
+    "name": "scutan90/DeepLearning-500-questions",
+    "language": "JavaScript",
+    "stars": 55907,
+    "forks": 15955
+  },
+  {
+    "name": "youngyangyang04/leetcode-master",
+    "language": "Shell",
+    "stars": 55858,
+    "forks": 11972
+  },
+  {
+    "name": "gatsbyjs/gatsby",
+    "language": "JavaScript",
+    "stars": 55836,
+    "forks": 10293
+  },
+  {
+    "name": "zylon-ai/private-gpt",
+    "language": "Python",
+    "stars": 55738,
+    "forks": 7470
+  },
+  {
+    "name": "Solido/awesome-flutter",
+    "language": "Dart",
+    "stars": 55700,
+    "forks": 6748
+  },
+  {
+    "name": "dair-ai/Prompt-Engineering-Guide",
+    "language": "MDX",
+    "stars": 55643,
+    "forks": 5485
+  },
+  {
+    "name": "soimort/you-get",
+    "language": "Python",
+    "stars": 55537,
+    "forks": 9750
+  },
+  {
+    "name": "azl397985856/leetcode",
+    "language": "JavaScript",
+    "stars": 55294,
+    "forks": 9484
+  },
+  {
+    "name": "FoundationAgents/MetaGPT",
+    "language": "Python",
+    "stars": 55266,
+    "forks": 6577
+  },
+  {
+    "name": "tldr-pages/tldr",
+    "language": "Markdown",
+    "stars": 55079,
+    "forks": 4431
+  },
+  {
+    "name": "scrapy/scrapy",
+    "language": "Python",
+    "stars": 55071,
+    "forks": 10777
+  },
+  {
+    "name": "PlexPt/awesome-chatgpt-prompts-zh",
+    "language": "Unbekannt",
+    "stars": 54878,
+    "forks": 13562
+  },
+  {
+    "name": "remix-run/react-router",
+    "language": "TypeScript",
+    "stars": 54701,
+    "forks": 10576
+  },
+  {
+    "name": "ageitgey/face_recognition",
+    "language": "Python",
+    "stars": 54683,
+    "forks": 13600
+  },
+  {
+    "name": "git/git",
+    "language": "C",
+    "stars": 54645,
+    "forks": 26168
+  },
+  {
+    "name": "traefik/traefik",
+    "language": "Go",
+    "stars": 54503,
+    "forks": 5317
+  },
+  {
+    "name": "jgraph/drawio-desktop",
+    "language": "JavaScript",
+    "stars": 54260,
+    "forks": 5263
+  },
+  {
+    "name": "ElemeFE/element",
+    "language": "Vue",
+    "stars": 54226,
+    "forks": 14636
+  },
+  {
+    "name": "nocodb/nocodb",
+    "language": "TypeScript",
+    "stars": 54137,
+    "forks": 3812
+  },
+  {
+    "name": "CorentinJ/Real-Time-Voice-Cloning",
+    "language": "Python",
+    "stars": 54134,
+    "forks": 8958
+  },
+  {
+    "name": "AntonOsika/gpt-engineer",
+    "language": "Python",
+    "stars": 54058,
+    "forks": 7091
+  },
+  {
+    "name": "deepfakes/faceswap",
+    "language": "Python",
+    "stars": 53797,
+    "forks": 13381
+  },
+  {
+    "name": "All-Hands-AI/OpenHands",
+    "language": "Python",
+    "stars": 53782,
+    "forks": 6035
+  },
+  {
+    "name": "lencx/ChatGPT",
+    "language": "Rust",
+    "stars": 53740,
+    "forks": 6082
+  },
+  {
+    "name": "ultralytics/yolov5",
+    "language": "Python",
+    "stars": 53666,
+    "forks": 16866
+  },
+  {
+    "name": "FiloSottile/mkcert",
+    "language": "Go",
+    "stars": 53316,
+    "forks": 2800
+  },
+  {
+    "name": "commaai/openpilot",
+    "language": "Python",
+    "stars": 53316,
+    "forks": 9681
+  },
+  {
+    "name": "gorhill/uBlock",
+    "language": "JavaScript",
+    "stars": 53150,
+    "forks": 3471
+  },
+  {
+    "name": "necolas/normalize.css",
+    "language": "CSS",
+    "stars": 53097,
+    "forks": 10588
+  },
+  {
+    "name": "psf/requests",
+    "language": "Python",
+    "stars": 52810,
+    "forks": 9443
+  },
+  {
+    "name": "topjohnwu/Magisk",
+    "language": "C++",
+    "stars": 52595,
+    "forks": 13786
+  },
+  {
+    "name": "astral-sh/uv",
+    "language": "Rust",
+    "stars": 52434,
+    "forks": 1477
+  },
+  {
+    "name": "sharkdp/bat",
+    "language": "Rust",
+    "stars": 52404,
+    "forks": 1289
+  },
+  {
+    "name": "wasabeef/awesome-android-ui",
+    "language": "Unbekannt",
+    "stars": 52361,
+    "forks": 10224
+  },
+  {
+    "name": "Z4nzu/hackingtool",
+    "language": "Python",
+    "stars": 52327,
+    "forks": 5635
+  },
+  {
+    "name": "minio/minio",
+    "language": "Go",
+    "stars": 52184,
+    "forks": 5808
+  },
+  {
+    "name": "golang-standards/project-layout",
+    "language": "Makefile",
+    "stars": 52158,
+    "forks": 5319
+  },
+  {
+    "name": "pmndrs/zustand",
+    "language": "TypeScript",
+    "stars": 52050,
+    "forks": 1667
+  },
+  {
+    "name": "BurntSushi/ripgrep",
+    "language": "Rust",
+    "stars": 52034,
+    "forks": 2113
+  },
+  {
+    "name": "Textualize/rich",
+    "language": "Python",
+    "stars": 51909,
+    "forks": 1827
+  },
+  {
+    "name": "pi-hole/pi-hole",
+    "language": "Shell",
+    "stars": 51713,
+    "forks": 2812
+  },
+  {
+    "name": "ionic-team/ionic-framework",
+    "language": "TypeScript",
+    "stars": 51677,
+    "forks": 13470
+  },
+  {
+    "name": "google/material-design-icons",
+    "language": "Unbekannt",
+    "stars": 51480,
+    "forks": 9649
+  },
+  {
+    "name": "Semantic-Org/Semantic-UI",
+    "language": "JavaScript",
+    "stars": 51162,
+    "forks": 4925
+  },
+  {
+    "name": "infiniflow/ragflow",
+    "language": "TypeScript",
+    "stars": 51125,
+    "forks": 4845
+  },
+  {
+    "name": "meilisearch/meilisearch",
+    "language": "Rust",
+    "stars": 50960,
+    "forks": 2021
+  },
+  {
+    "name": "withastro/astro",
+    "language": "TypeScript",
+    "stars": 50874,
+    "forks": 2716
+  },
+  {
+    "name": "google/guava",
+    "language": "Java",
+    "stars": 50733,
+    "forks": 10989
+  },
+  {
+    "name": "mozilla/pdf.js",
+    "language": "JavaScript",
+    "stars": 50610,
+    "forks": 10285
+  },
+  {
+    "name": "tiimgreen/github-cheat-sheet",
+    "language": "Unbekannt",
+    "stars": 50593,
+    "forks": 5313
+  },
+  {
+    "name": "wagoodman/dive",
+    "language": "Go",
+    "stars": 50553,
+    "forks": 1872
+  },
+  {
+    "name": "JetBrains/kotlin",
+    "language": "Kotlin",
+    "stars": 50459,
+    "forks": 5902
+  },
+  {
+    "name": "toeverything/AFFiNE",
+    "language": "TypeScript",
+    "stars": 50375,
+    "forks": 3327
+  },
+  {
+    "name": "prettier/prettier",
+    "language": "JavaScript",
+    "stars": 50368,
+    "forks": 4494
+  },
+  {
+    "name": "sickcodes/Docker-OSX",
+    "language": "Shell",
+    "stars": 50325,
+    "forks": 2807
+  },
+  {
+    "name": "xai-org/grok-1",
+    "language": "Python",
+    "stars": 50242,
+    "forks": 8351
+  },
+  {
+    "name": "rclone/rclone",
+    "language": "Go",
+    "stars": 50133,
+    "forks": 4474
+  },
+  {
+    "name": "rust-unofficial/awesome-rust",
+    "language": "Rust",
+    "stars": 50125,
+    "forks": 2890
+  },
+  {
+    "name": "jekyll/jekyll",
+    "language": "Ruby",
+    "stars": 49981,
+    "forks": 10092
+  },
+  {
+    "name": "facebookresearch/segment-anything",
+    "language": "Jupyter Notebook",
+    "stars": 49949,
+    "forks": 5882
+  },
+  {
+    "name": "mlabonne/llm-course",
+    "language": "Jupyter Notebook",
+    "stars": 49946,
+    "forks": 5354
+  },
+  {
+    "name": "vuejs/core",
+    "language": "TypeScript",
+    "stars": 49900,
+    "forks": 8623
+  },
+  {
+    "name": "jgthms/bulma",
+    "language": "CSS",
+    "stars": 49738,
+    "forks": 3948
+  },
+  {
+    "name": "ngosang/trackerslist",
+    "language": "Unbekannt",
+    "stars": 49698,
+    "forks": 6647
+  },
+  {
+    "name": "DefinitelyTyped/DefinitelyTyped",
+    "language": "TypeScript",
+    "stars": 49677,
+    "forks": 30385
+  },
+  {
+    "name": "marktext/marktext",
+    "language": "JavaScript",
+    "stars": 49528,
+    "forks": 3633
+  },
+  {
+    "name": "FFmpeg/FFmpeg",
+    "language": "C",
+    "stars": 49528,
+    "forks": 12595
+  },
+  {
+    "name": "etcd-io/etcd",
+    "language": "Go",
+    "stars": 49236,
+    "forks": 10061
+  },
+  {
+    "name": "TryGhost/Ghost",
+    "language": "JavaScript",
+    "stars": 49149,
+    "forks": 10752
+  },
+  {
+    "name": "chinese-poetry/chinese-poetry",
+    "language": "JavaScript",
+    "stars": 49078,
+    "forks": 9828
+  },
+  {
+    "name": "romkatv/powerlevel10k",
+    "language": "Shell",
+    "stars": 49077,
+    "forks": 2281
+  },
+  {
+    "name": "laurent22/joplin",
+    "language": "TypeScript",
+    "stars": 49064,
+    "forks": 5316
+  },
+  {
+    "name": "AlistGo/alist",
+    "language": "Go",
+    "stars": 48965,
+    "forks": 6637
+  },
+  {
+    "name": "ethereum/go-ethereum",
+    "language": "Go",
+    "stars": 48863,
+    "forks": 20828
+  },
+  {
+    "name": "PaddlePaddle/PaddleOCR",
+    "language": "Python",
+    "stars": 48841,
+    "forks": 8173
+  },
+  {
+    "name": "vsouza/awesome-ios",
+    "language": "Swift",
+    "stars": 48812,
+    "forks": 6889
+  },
+  {
+    "name": "WerWolv/ImHex",
+    "language": "C++",
+    "stars": 48759,
+    "forks": 2115
+  },
+  {
+    "name": "cypress-io/cypress",
+    "language": "TypeScript",
+    "stars": 48594,
+    "forks": 3284
+  },
+  {
+    "name": "starship/starship",
+    "language": "Rust",
+    "stars": 48528,
+    "forks": 2096
+  },
+  {
+    "name": "go-gitea/gitea",
+    "language": "Go",
+    "stars": 48411,
+    "forks": 5776
+  },
+  {
+    "name": "NARKOZ/hacker-scripts",
+    "language": "JavaScript",
+    "stars": 48409,
+    "forks": 6654
+  },
+  {
+    "name": "appwrite/appwrite",
+    "language": "TypeScript",
+    "stars": 48393,
+    "forks": 4289
+  },
+  {
+    "name": "poteto/hiring-without-whiteboards",
+    "language": "JavaScript",
+    "stars": 48338,
+    "forks": 3767
+  },
+  {
+    "name": "firstcontributions/first-contributions",
+    "language": "Unbekannt",
+    "stars": 48226,
+    "forks": 85638
+  },
+  {
+    "name": "mastodon/mastodon",
+    "language": "Ruby",
+    "stars": 48212,
+    "forks": 7158
+  },
+  {
+    "name": "hiyouga/LLaMA-Factory",
+    "language": "Python",
+    "stars": 48209,
+    "forks": 5876
+  },
+  {
+    "name": "DigitalPlatDev/FreeDomain",
+    "language": "HTML",
+    "stars": 48143,
+    "forks": 1002
+  },
+  {
+    "name": "ReactiveX/RxJava",
+    "language": "Java",
+    "stars": 48115,
+    "forks": 7603
+  },
+  {
+    "name": "moment/moment",
+    "language": "JavaScript",
+    "stars": 48077,
+    "forks": 7061
+  },
+  {
+    "name": "iamkun/dayjs",
+    "language": "JavaScript",
+    "stars": 47742,
+    "forks": 2353
+  },
+  {
+    "name": "rasbt/LLMs-from-scratch",
+    "language": "Jupyter Notebook",
+    "stars": 47588,
+    "forks": 6774
+  },
+  {
+    "name": "charlax/professional-programming",
+    "language": "Python",
+    "stars": 47585,
+    "forks": 3778
+  },
+  {
+    "name": "justjavac/awesome-wechat-weapp",
+    "language": "Unbekannt",
+    "stars": 47431,
+    "forks": 8769
+  },
+  {
+    "name": "agalwood/Motrix",
+    "language": "JavaScript",
+    "stars": 47402,
+    "forks": 4627
+  },
+  {
+    "name": "PowerShell/PowerShell",
+    "language": "C#",
+    "stars": 47242,
+    "forks": 7624
+  },
+  {
+    "name": "minimaxir/big-list-of-naughty-strings",
+    "language": "Python",
+    "stars": 47126,
+    "forks": 2157
+  },
+  {
+    "name": "Avik-Jain/100-Days-Of-ML-Code",
+    "language": "Unbekannt",
+    "stars": 47124,
+    "forks": 10902
+  },
+  {
+    "name": "JuliaLang/julia",
+    "language": "Julia",
+    "stars": 46951,
+    "forks": 5582
+  },
+  {
+    "name": "pocketbase/pocketbase",
+    "language": "Go",
+    "stars": 46899,
+    "forks": 2315
+  },
+  {
+    "name": "serverless/serverless",
+    "language": "JavaScript",
+    "stars": 46674,
+    "forks": 5743
+  },
+  {
+    "name": "vllm-project/vllm",
+    "language": "Python",
+    "stars": 46497,
+    "forks": 7227
+  },
+  {
+    "name": "kamranahmedse/design-patterns-for-humans",
+    "language": "Unbekannt",
+    "stars": 46356,
+    "forks": 5409
+  },
+  {
+    "name": "square/okhttp",
+    "language": "Kotlin",
+    "stars": 46343,
+    "forks": 9206
+  },
+  {
+    "name": "gogs/gogs",
+    "language": "Go",
+    "stars": 46306,
+    "forks": 5027
+  },
+  {
+    "name": "typescript-cheatsheets/react",
+    "language": "JavaScript",
+    "stars": 46234,
+    "forks": 4197
+  },
+  {
+    "name": "karan/Projects",
+    "language": "Unbekannt",
+    "stars": 46223,
+    "forks": 10672
+  },
+  {
+    "name": "Asabeneh/30-Days-Of-Python",
+    "language": "Python",
+    "stars": 46115,
+    "forks": 8794
+  },
+  {
+    "name": "huginn/huginn",
+    "language": "Ruby",
+    "stars": 46061,
+    "forks": 3969
+  },
+  {
+    "name": "ziishaned/learn-regex",
+    "language": "Unbekannt",
+    "stars": 45999,
+    "forks": 6267
+  },
+  {
+    "name": "v2ray/v2ray-core",
+    "language": "Go",
+    "stars": 45974,
+    "forks": 8933
+  },
+  {
+    "name": "x64dbg/x64dbg",
+    "language": "C++",
+    "stars": 45940,
+    "forks": 2529
+  },
+  {
+    "name": "punkpeye/awesome-mcp-servers",
+    "language": "Unbekannt",
+    "stars": 45853,
+    "forks": 3367
+  },
+  {
+    "name": "RVC-Boss/GPT-SoVITS",
+    "language": "Python",
+    "stars": 45827,
+    "forks": 5049
+  },
+  {
+    "name": "nlohmann/json",
+    "language": "C++",
+    "stars": 45503,
+    "forks": 6960
+  },
+  {
+    "name": "pandas-dev/pandas",
+    "language": "Python",
+    "stars": 45318,
+    "forks": 18472
+  },
+  {
+    "name": "slab/quill",
+    "language": "TypeScript",
+    "stars": 45256,
+    "forks": 3493
+  },
+  {
+    "name": "type-challenges/type-challenges",
+    "language": "TypeScript",
+    "stars": 45243,
+    "forks": 4930
+  },
+  {
+    "name": "FoundationAgents/OpenManus",
+    "language": "Python",
+    "stars": 45102,
+    "forks": 7768
+  },
+  {
+    "name": "hashicorp/terraform",
+    "language": "Go",
+    "stars": 45102,
+    "forks": 9840
+  },
+  {
+    "name": "pixijs/pixijs",
+    "language": "TypeScript",
+    "stars": 45044,
+    "forks": 4851
+  },
+  {
+    "name": "TanStack/query",
+    "language": "TypeScript",
+    "stars": 44987,
+    "forks": 3145
+  },
+  {
+    "name": "android/architecture-samples",
+    "language": "Kotlin",
+    "stars": 44986,
+    "forks": 11735
+  },
+  {
+    "name": "dkhamsing/open-source-ios-apps",
+    "language": "Unbekannt",
+    "stars": 44850,
+    "forks": 5534
+  },
+  {
+    "name": "jestjs/jest",
+    "language": "TypeScript",
+    "stars": 44737,
+    "forks": 6534
+  },
+  {
+    "name": "meteor/meteor",
+    "language": "JavaScript",
+    "stars": 44643,
+    "forks": 5210
+  },
+  {
+    "name": "lllyasviel/Fooocus",
+    "language": "Python",
+    "stars": 44625,
+    "forks": 6917
+  },
+  {
+    "name": "ColorlibHQ/AdminLTE",
+    "language": "Astro",
+    "stars": 44542,
+    "forks": 18198
+  },
+  {
+    "name": "bigskysoftware/htmx",
+    "language": "JavaScript",
+    "stars": 44470,
+    "forks": 1432
+  },
+  {
+    "name": "jakevdp/PythonDataScienceHandbook",
+    "language": "Jupyter Notebook",
+    "stars": 44403,
+    "forks": 18289
+  },
+  {
+    "name": "brillout/awesome-react-components",
+    "language": "Unbekannt",
+    "stars": 44330,
+    "forks": 3595
+  },
+  {
+    "name": "Asabeneh/30-Days-Of-JavaScript",
+    "language": "JavaScript",
+    "stars": 44305,
+    "forks": 10225
+  },
+  {
+    "name": "dani-garcia/vaultwarden",
+    "language": "Rust",
+    "stars": 44129,
+    "forks": 2090
+  },
+  {
+    "name": "google/zx",
+    "language": "JavaScript",
+    "stars": 44035,
+    "forks": 1137
+  },
+  {
+    "name": "microsoft/autogen",
+    "language": "Python",
+    "stars": 44012,
+    "forks": 6641
+  },
+  {
+    "name": "vercel/hyper",
+    "language": "TypeScript",
+    "stars": 43927,
+    "forks": 3529
+  },
+  {
+    "name": "maybe-finance/maybe",
+    "language": "Ruby",
+    "stars": 43909,
+    "forks": 3176
+  },
+  {
+    "name": "discourse/discourse",
+    "language": "Ruby",
+    "stars": 43893,
+    "forks": 8518
+  },
+  {
+    "name": "jesseduffield/lazydocker",
+    "language": "Go",
+    "stars": 43829,
+    "forks": 1379
+  },
+  {
+    "name": "parcel-bundler/parcel",
+    "language": "JavaScript",
+    "stars": 43810,
+    "forks": 2268
+  },
+  {
+    "name": "skylot/jadx",
+    "language": "Java",
+    "stars": 43806,
+    "forks": 5056
+  },
+  {
+    "name": "FuelLabs/fuels-ts",
+    "language": "TypeScript",
+    "stars": 43801,
+    "forks": 1373
+  },
+  {
+    "name": "FuelLabs/fuels-rs",
+    "language": "Rust",
+    "stars": 43797,
+    "forks": 1349
+  },
+  {
+    "name": "kelseyhightower/kubernetes-the-hard-way",
+    "language": "Unbekannt",
+    "stars": 43753,
+    "forks": 14740
+  },
+  {
+    "name": "serhii-londar/open-source-mac-os-apps",
+    "language": "Unbekannt",
+    "stars": 43739,
+    "forks": 2363
+  },
+  {
+    "name": "lyswhut/lx-music-desktop",
+    "language": "TypeScript",
+    "stars": 43718,
+    "forks": 6217
+  },
+  {
+    "name": "dypsilon/frontend-dev-bookmarks",
+    "language": "Unbekannt",
+    "stars": 43705,
+    "forks": 5106
+  },
+  {
+    "name": "isocpp/CppCoreGuidelines",
+    "language": "CSS",
+    "stars": 43618,
+    "forks": 5479
+  },
+  {
+    "name": "akullpp/awesome-java",
+    "language": "Unbekannt",
+    "stars": 43617,
+    "forks": 7479
+  },
+  {
+    "name": "aymericdamien/TensorFlow-Examples",
+    "language": "Jupyter Notebook",
+    "stars": 43615,
+    "forks": 14894
+  },
+  {
+    "name": "Mintplex-Labs/anything-llm",
+    "language": "JavaScript",
+    "stars": 43604,
+    "forks": 4268
+  },
+  {
+    "name": "babel/babel",
+    "language": "TypeScript",
+    "stars": 43549,
+    "forks": 5709
+  },
+  {
+    "name": "astaxie/build-web-application-with-golang",
+    "language": "Go",
+    "stars": 43548,
+    "forks": 10619
+  },
+  {
+    "name": "square/retrofit",
+    "language": "HTML",
+    "stars": 43465,
+    "forks": 7314
+  },
+  {
+    "name": "Homebrew/brew",
+    "language": "Ruby",
+    "stars": 43450,
+    "forks": 10182
+  },
+  {
+    "name": "oobabooga/text-generation-webui",
+    "language": "Python",
+    "stars": 43448,
+    "forks": 5599
+  },
+  {
+    "name": "dbeaver/dbeaver",
+    "language": "Java",
+    "stars": 43396,
+    "forks": 3695
+  },
+  {
+    "name": "modelcontextprotocol/servers",
+    "language": "JavaScript",
+    "stars": 43354,
+    "forks": 4787
+  },
+  {
+    "name": "react-hook-form/react-hook-form",
+    "language": "TypeScript",
+    "stars": 43004,
+    "forks": 2171
+  },
+  {
+    "name": "streamich/react-use",
+    "language": "TypeScript",
+    "stars": 42969,
+    "forks": 3225
+  },
+  {
+    "name": "grpc/grpc",
+    "language": "C++",
+    "stars": 42965,
+    "forks": 10779
+  },
+  {
+    "name": "yangshun/front-end-interview-handbook",
+    "language": "MDX",
+    "stars": 42851,
+    "forks": 5899
+  },
+  {
+    "name": "odoo/odoo",
+    "language": "Python",
+    "stars": 42733,
+    "forks": 27595
+  },
+  {
+    "name": "Leaflet/Leaflet",
+    "language": "JavaScript",
+    "stars": 42657,
+    "forks": 5923
+  },
+  {
+    "name": "RocketChat/Rocket.Chat",
+    "language": "TypeScript",
+    "stars": 42571,
+    "forks": 11706
+  },
+  {
+    "name": "jeecgboot/JeecgBoot",
+    "language": "Java",
+    "stars": 42555,
+    "forks": 15315
+  },
+  {
+    "name": "cline/cline",
+    "language": "TypeScript",
+    "stars": 42532,
+    "forks": 4849
+  },
+  {
+    "name": "DovAmir/awesome-design-patterns",
+    "language": "Unbekannt",
+    "stars": 42478,
+    "forks": 3054
+  },
+  {
+    "name": "acmesh-official/acme.sh",
+    "language": "Shell",
+    "stars": 42457,
+    "forks": 5227
+  },
+  {
+    "name": "LeCoupa/awesome-cheatsheets",
+    "language": "JavaScript",
+    "stars": 42380,
+    "forks": 6434
+  },
+  {
+    "name": "microsoft/monaco-editor",
+    "language": "JavaScript",
+    "stars": 42341,
+    "forks": 3733
+  },
+  {
+    "name": "Unitech/pm2",
+    "language": "JavaScript",
+    "stars": 42168,
+    "forks": 2638
+  },
+  {
+    "name": "unclecode/crawl4ai",
+    "language": "Python",
+    "stars": 42151,
+    "forks": 3858
+  },
+  {
+    "name": "prisma/prisma",
+    "language": "TypeScript",
+    "stars": 42123,
+    "forks": 1735
+  },
+  {
+    "name": "GitSquared/edex-ui",
+    "language": "JavaScript",
+    "stars": 42108,
+    "forks": 2713
+  },
+  {
+    "name": "k88hudson/git-flight-rules",
+    "language": "Unbekannt",
+    "stars": 42061,
+    "forks": 3197
+  },
+  {
+    "name": "sudheerj/reactjs-interview-questions",
+    "language": "JavaScript",
+    "stars": 41906,
+    "forks": 9857
+  },
+  {
+    "name": "pyenv/pyenv",
+    "language": "Roff",
+    "stars": 41904,
+    "forks": 3167
+  },
+  {
+    "name": "Alamofire/Alamofire",
+    "language": "Swift",
+    "stars": 41874,
+    "forks": 7608
+  },
+  {
+    "name": "metabase/metabase",
+    "language": "Clojure",
+    "stars": 41837,
+    "forks": 5529
+  },
+  {
+    "name": "alex/what-happens-when",
+    "language": "Unbekannt",
+    "stars": 41722,
+    "forks": 5706
+  },
+  {
+    "name": "yarnpkg/yarn",
+    "language": "JavaScript",
+    "stars": 41548,
+    "forks": 2731
+  },
+  {
+    "name": "run-llama/llama_index",
+    "language": "Python",
+    "stars": 41394,
+    "forks": 5892
+  },
+  {
+    "name": "faif/python-patterns",
+    "language": "Python",
+    "stars": 41330,
+    "forks": 6986
+  },
+  {
+    "name": "OpenBB-finance/OpenBB",
+    "language": "Python",
+    "stars": 41211,
+    "forks": 3676
+  },
+  {
+    "name": "bailicangdu/vue2-elm",
+    "language": "Vue",
+    "stars": 41096,
+    "forks": 12408
+  },
+  {
+    "name": "termux/termux-app",
+    "language": "Java",
+    "stars": 41059,
+    "forks": 4438
+  },
+  {
+    "name": "apache/spark",
+    "language": "Scala",
+    "stars": 41047,
+    "forks": 28516
+  },
+  {
+    "name": "THUDM/ChatGLM-6B",
+    "language": "Python",
+    "stars": 41040,
+    "forks": 5224
+  },
+  {
+    "name": "Light-City/CPlusPlusThings",
+    "language": "C++",
+    "stars": 41014,
+    "forks": 8699
+  },
+  {
+    "name": "karpathy/nanoGPT",
+    "language": "Python",
+    "stars": 41000,
+    "forks": 6798
+  },
+  {
+    "name": "apache/dubbo",
+    "language": "Java",
+    "stars": 40951,
+    "forks": 26526
+  },
+  {
+    "name": "Stability-AI/stablediffusion",
+    "language": "Python",
+    "stars": 40897,
+    "forks": 5221
+  },
+  {
+    "name": "nolimits4web/swiper",
+    "language": "JavaScript",
+    "stars": 40895,
+    "forks": 9753
+  },
+  {
+    "name": "coreybutler/nvm-windows",
+    "language": "Go",
+    "stars": 40881,
+    "forks": 3505
+  },
+  {
+    "name": "hpcaitech/ColossalAI",
+    "language": "Python",
+    "stars": 40843,
+    "forks": 4498
+  },
+  {
+    "name": "styled-components/styled-components",
+    "language": "TypeScript",
+    "stars": 40797,
+    "forks": 2511
+  },
+  {
+    "name": "coollabsio/coolify",
+    "language": "PHP",
+    "stars": 40750,
+    "forks": 2453
+  },
+  {
+    "name": "getsentry/sentry",
+    "language": "Python",
+    "stars": 40745,
+    "forks": 4334
+  },
+  {
+    "name": "Kong/kong",
+    "language": "Lua",
+    "stars": 40744,
+    "forks": 4915
+  },
+  {
+    "name": "mingrammer/diagrams",
+    "language": "Python",
+    "stars": 40741,
+    "forks": 2615
+  },
+  {
+    "name": "dcloudio/uni-app",
+    "language": "JavaScript",
+    "stars": 40709,
+    "forks": 3678
+  },
+  {
+    "name": "nwjs/nw.js",
+    "language": "JavaScript",
+    "stars": 40707,
+    "forks": 3876
+  },
+  {
+    "name": "apachecn/ailearning",
+    "language": "Python",
+    "stars": 40694,
+    "forks": 11546
+  },
+  {
+    "name": "ClickHouse/ClickHouse",
+    "language": "C++",
+    "stars": 40484,
+    "forks": 7267
+  },
+  {
+    "name": "vuetifyjs/vuetify",
+    "language": "TypeScript",
+    "stars": 40461,
+    "forks": 7004
+  },
+  {
+    "name": "2dust/v2rayNG",
+    "language": "Kotlin",
+    "stars": 40388,
+    "forks": 5961
+  },
+  {
+    "name": "spf13/cobra",
+    "language": "Go",
+    "stars": 40311,
+    "forks": 2935
+  },
+  {
+    "name": "hexojs/hexo",
+    "language": "TypeScript",
+    "stars": 40285,
+    "forks": 4920
+  },
+  {
+    "name": "iina/iina",
+    "language": "Swift",
+    "stars": 40262,
+    "forks": 2620
+  },
+  {
+    "name": "KRTirtho/spotube",
+    "language": "Dart",
+    "stars": 40236,
+    "forks": 1666
+  },
+  {
+    "name": "psf/black",
+    "language": "Python",
+    "stars": 40187,
+    "forks": 2573
+  },
+  {
+    "name": "ultralytics/ultralytics",
+    "language": "Python",
+    "stars": 40164,
+    "forks": 7785
+  },
+  {
+    "name": "fastlane/fastlane",
+    "language": "Ruby",
+    "stars": 40128,
+    "forks": 5798
+  },
+  {
+    "name": "tldraw/tldraw",
+    "language": "TypeScript",
+    "stars": 39929,
+    "forks": 2506
+  },
+  {
+    "name": "apache/airflow",
+    "language": "Python",
+    "stars": 39921,
+    "forks": 14966
+  },
+  {
+    "name": "typst/typst",
+    "language": "Rust",
+    "stars": 39900,
+    "forks": 1085
+  },
+  {
+    "name": "coqui-ai/TTS",
+    "language": "Python",
+    "stars": 39775,
+    "forks": 5061
+  },
+  {
+    "name": "ggml-org/whisper.cpp",
+    "language": "C++",
+    "stars": 39709,
+    "forks": 4180
+  },
+  {
+    "name": "bannedbook/fanqiang",
+    "language": "Kotlin",
+    "stars": 39610,
+    "forks": 7349
+  },
+  {
+    "name": "expo/expo",
+    "language": "TypeScript",
+    "stars": 39610,
+    "forks": 6787
+  },
+  {
+    "name": "LC044/WeChatMsg",
+    "language": "Unbekannt",
+    "stars": 39437,
+    "forks": 4157
+  },
+  {
+    "name": "bevyengine/bevy",
+    "language": "Rust",
+    "stars": 39356,
+    "forks": 3863
+  },
+  {
+    "name": "chubin/cheat.sh",
+    "language": "Python",
+    "stars": 39316,
+    "forks": 1812
+  },
+  {
+    "name": "jellyfin/jellyfin",
+    "language": "C#",
+    "stars": 39267,
+    "forks": 3502
+  },
+  {
+    "name": "usememos/memos",
+    "language": "Go",
+    "stars": 39259,
+    "forks": 2806
+  },
+  {
+    "name": "tabler/tabler",
+    "language": "HTML",
+    "stars": 39222,
+    "forks": 4138
+  },
+  {
+    "name": "streamlit/streamlit",
+    "language": "Python",
+    "stars": 39175,
+    "forks": 3432
+  },
+  {
+    "name": "1c7/chinese-independent-developer",
+    "language": "Unbekannt",
+    "stars": 39105,
+    "forks": 3231
+  },
+  {
+    "name": "google-research/bert",
+    "language": "Python",
+    "stars": 39089,
+    "forks": 9674
+  },
+  {
+    "name": "chakra-ui/chakra-ui",
+    "language": "TypeScript",
+    "stars": 39030,
+    "forks": 3401
+  },
+  {
+    "name": "cli/cli",
+    "language": "Go",
+    "stars": 39029,
+    "forks": 6485
+  },
+  {
+    "name": "mitmproxy/mitmproxy",
+    "language": "Python",
+    "stars": 38968,
+    "forks": 4174
+  },
+  {
+    "name": "php/php-src",
+    "language": "C",
+    "stars": 38968,
+    "forks": 7847
+  },
+  {
+    "name": "floodsung/Deep-Learning-Papers-Reading-Roadmap",
+    "language": "Python",
+    "stars": 38968,
+    "forks": 7351
+  },
+  {
+    "name": "wg/wrk",
+    "language": "C",
+    "stars": 38891,
+    "forks": 2989
+  },
+  {
+    "name": "evanw/esbuild",
+    "language": "Go",
+    "stars": 38881,
+    "forks": 1199
+  },
+  {
+    "name": "Dogfalo/materialize",
+    "language": "JavaScript",
+    "stars": 38879,
+    "forks": 4719
+  },
+  {
+    "name": "docker/awesome-compose",
+    "language": "HTML",
+    "stars": 38874,
+    "forks": 7263
+  },
+  {
+    "name": "bradtraversy/50projects50days",
+    "language": "CSS",
+    "stars": 38827,
+    "forks": 9477
+  },
+  {
+    "name": "ziglang/zig",
+    "language": "Zig",
+    "stars": 38821,
+    "forks": 2816
+  },
+  {
+    "name": "freqtrade/freqtrade",
+    "language": "Python",
+    "stars": 38804,
+    "forks": 7653
+  },
+  {
+    "name": "zhongyang219/TrafficMonitor",
+    "language": "C++",
+    "stars": 38801,
+    "forks": 3427
+  },
+  {
+    "name": "videojs/video.js",
+    "language": "JavaScript",
+    "stars": 38728,
+    "forks": 7506
+  },
+  {
+    "name": "NaiboWang/EasySpider",
+    "language": "JavaScript",
+    "stars": 38695,
+    "forks": 4746
+  },
+  {
+    "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+    "language": "Unbekannt",
+    "stars": 38558,
+    "forks": 11738
+  },
+  {
+    "name": "lm-sys/FastChat",
+    "language": "Python",
+    "stars": 38505,
+    "forks": 4701
+  },
+  {
+    "name": "GokuMohandas/Made-With-ML",
+    "language": "Jupyter Notebook",
+    "stars": 38504,
+    "forks": 6104
+  },
+  {
+    "name": "pingcap/tidb",
+    "language": "Go",
+    "stars": 38363,
+    "forks": 5927
+  },
+  {
+    "name": "QSCTech/zju-icicles",
+    "language": "HTML",
+    "stars": 38331,
+    "forks": 9498
+  },
+  {
+    "name": "byoungd/English-level-up-tips",
+    "language": "HTML",
+    "stars": 38321,
+    "forks": 4199
+  },
+  {
+    "name": "LadybirdBrowser/ladybird",
+    "language": "C++",
+    "stars": 38321,
+    "forks": 1595
+  },
+  {
+    "name": "astral-sh/ruff",
+    "language": "Rust",
+    "stars": 38310,
+    "forks": 1314
+  },
+  {
+    "name": "deepspeedai/DeepSpeed",
+    "language": "Python",
+    "stars": 38197,
+    "forks": 4352
+  },
+  {
+    "name": "google/styleguide",
+    "language": "HTML",
+    "stars": 38137,
+    "forks": 13017
+  },
+  {
+    "name": "go-gorm/gorm",
+    "language": "Go",
+    "stars": 38112,
+    "forks": 4006
+  },
+  {
+    "name": "vim/vim",
+    "language": "Vim Script",
+    "stars": 38056,
+    "forks": 5661
+  },
+  {
+    "name": "unslothai/unsloth",
+    "language": "Python",
+    "stars": 38000,
+    "forks": 2973
+  },
+  {
+    "name": "PhilJay/MPAndroidChart",
+    "language": "Java",
+    "stars": 37947,
+    "forks": 9034
+  },
+  {
+    "name": "penpot/penpot",
+    "language": "Clojure",
+    "stars": 37901,
+    "forks": 1949
+  }
+]
