@@ -39,4 +39,6 @@ build/
 
 /target/
 
-repos.json
+
+gitlab_repos_eigenschaften.json
+github_repos_eigenschaften
