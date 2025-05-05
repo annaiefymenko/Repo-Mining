@@ -1,5 +1,9 @@
-package hsd.crawler;
 
+
+//NUR FÜR GITHUB NICHT GITLAB
+
+package hsd.crawler;
+/*
 public class GitHubAnalyzer {
 
     public static void analysiere(Repository repo) {
@@ -14,3 +18,4 @@ public class GitHubAnalyzer {
         System.out.println("--------------------------------------------------");
     }
 }
+*/

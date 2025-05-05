@@ -1,3 +1,7 @@
+
+
+//NUR FÜR GITHUB NICHT GITLAB
+
 package hsd.crawler;
 
 import com.google.gson.*;
@@ -6,7 +10,7 @@ import java.net.*;
 import java.util.*;
 
 import static com.google.gson.JsonParser.*;
-
+/*
 public class GitHubAPI {
 
     public static List<Repository> holeTopRepos(String token) throws Exception {
@@ -50,3 +54,4 @@ public class GitHubAPI {
     }
 
 }
+*/

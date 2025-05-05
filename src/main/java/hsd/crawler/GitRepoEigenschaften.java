@@ -1,78 +1,152 @@
 package hsd.crawler;
 
+import com.google.gson.*;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.nio.file.*;
 
 public class GitRepoEigenschaften {
 
-    public static String ermittleErstesCommitDatum(String repoPfad) throws IOException, InterruptedException {
-        ProcessBuilder logBuilder = new ProcessBuilder("git", "log", "--reverse", "-1", "--format=%cd", "--date=iso");
-        logBuilder.directory(new File(repoPfad));
-        Process logProcess = logBuilder.start();
+    private static final String GITLAB_API_BASE = "https://gitlab.com/api/v4/projects/";
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(logProcess.getInputStream()));
-        String firstCommitDate = reader.readLine();
-        logProcess.waitFor();
-
-        return firstCommitDate;
+    // Zentrale Methode für API-GET-Aufrufe
+    private static HttpURLConnection erzeugeVerbindung(String endpoint, String token) throws IOException {
+        URL url = new URL(GITLAB_API_BASE + URLEncoder.encode(endpoint, "UTF-8"));
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestProperty("PRIVATE-TOKEN", token);
+        conn.setRequestMethod("GET");
+        return conn;
     }
 
-    public static int ermittleAnzahlCommits(String repoPfad) throws IOException, InterruptedException {
-        ProcessBuilder countBuilder = new ProcessBuilder("git", "rev-list", "--count", "HEAD");
-        countBuilder.directory(new File(repoPfad));
-        Process countProcess = countBuilder.start();
+    public static List<Repository> ladeAlleProjekte(String privateToken, String namespace) {
+        List<Repository> repos = new ArrayList<>();
+        int page = 1;
+        boolean hasMore = true;
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(countProcess.getInputStream()));
-        String countStr = reader.readLine();
-        countProcess.waitFor();
+        try {
+            while (hasMore) {
+                String encodedNamespace = URLEncoder.encode(namespace, "UTF-8");
+                String apiUrl = "https://gitlab.com/api/v4/users/" + encodedNamespace + "/projects?per_page=100&page=" + page;
+                URL url = new URL(apiUrl);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.setRequestProperty("PRIVATE-TOKEN", privateToken);
 
-        return Integer.parseInt(countStr.trim());
-    }
+                BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                StringBuilder response = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    response.append(line);
+                }
+                reader.close();
 
-    public static int ermittleAnzahlBranches(String repoPfad) throws IOException, InterruptedException {
-        ProcessBuilder branchBuilder = new ProcessBuilder("git", "branch", "-r");
-        branchBuilder.directory(new File(repoPfad));
-        Process branchProcess = branchBuilder.start();
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(branchProcess.getInputStream()));
-        int branchCount = 0;
-        String line;
-        while ((line = reader.readLine()) != null) {
-            if (!line.trim().isEmpty()) {
-                branchCount++;
+                JsonArray projects = new JsonParser().parse(response.toString()).getAsJsonArray();
+                if (projects.size() == 0) {
+                    hasMore = false;
+                } else {
+                    for (JsonElement elem : projects) {
+                        JsonObject obj = elem.getAsJsonObject();
+                        String name = obj.get("path_with_namespace").getAsString();
+                        String lang = obj.has("language") && !obj.get("language").isJsonNull() ? obj.get("language").getAsString() : "Unbekannt";
+                        int stars = obj.get("star_count").getAsInt();
+                        int forks = obj.get("forks_count").getAsInt();
+                        repos.add(new Repository(name, lang, stars, forks));
+                    }
+                    page++;
+                }
             }
+        } catch (Exception e) {
+            System.out.println("Fehler beim Laden der Projekte: " + e.getMessage());
         }
 
-        branchProcess.waitFor();
-        return branchCount;
+        return repos;
+    }
+
+    public static int ermittleAnzahlCommits(String projectPath, String privateToken) {
+        try {
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/commits?per_page=1", privateToken);
+            conn.setRequestMethod("HEAD");
+            String totalCommits = conn.getHeaderField("X-Total");
+            return totalCommits != null ? Integer.parseInt(totalCommits) : 0;
+        } catch (Exception e) {
+            System.out.println("Fehler beim Abrufen der Commit-Anzahl: " + e.getMessage());
+            return 0;
+        }
+    }
+
+    public static int ermittleAnzahlBranches(String projectPath, String privateToken) {
+        try {
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/branches", privateToken);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) response.append(line);
+            reader.close();
+
+            JsonElement json = new JsonParser().parse(response.toString());
+            return json.getAsJsonArray().size();
+        } catch (Exception e) {
+            System.out.println("Fehler beim Abrufen der Branches: " + e.getMessage());
+            return 0;
+        }
     }
 
     public static int countFiles(String projectPath, String privateToken) {
         int fileCount = 0;
         try {
-            String encodedProject = URLEncoder.encode(projectPath, "UTF-8");
-            String apiUrl = "https://gitlab.com/api/v4/projects/" + encodedProject + "/repository/tree?recursive=true&per_page=100";
-            URL url = new URL(apiUrl);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestProperty("PRIVATE-TOKEN", privateToken);
-            conn.setRequestMethod("GET");
-
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/tree?recursive=true&per_page=100", privateToken);
             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String line;
             while ((line = in.readLine()) != null) {
-                if (line.contains("\"type\":\"blob\"")) {
-                    fileCount++;
-                }
+                if (line.contains("\"type\":\"blob\"")) fileCount++;
             }
             in.close();
         } catch (Exception e) {
-            System.out.println("Fehler: " + e.getMessage());
+            System.out.println("Fehler beim Zählen der Dateien: " + e.getMessage());
         }
         return fileCount;
     }
 
-    public static String detectLanguage(String code) {
+    public static String ermittleLetztesAenderungsdatum(String projectPath, String privateToken) {
+        try {
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/commits?per_page=1", privateToken);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) response.append(line);
+            reader.close();
+
+            JsonArray commits = new JsonParser().parse(response.toString()).getAsJsonArray();
+            if (commits.size() > 0) {
+                return commits.get(0).getAsJsonObject().get("committed_date").getAsString();
+            }
+        } catch (Exception e) {
+            System.out.println("Fehler beim Abrufen des Änderungsdatums: " + e.getMessage());
+        }
+        return "Unbekannt";
+    }
+
+    public static String ermittleAutoren(String projectPath, String privateToken) {
+        try {
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/commits?per_page=1", privateToken);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) response.append(line);
+            reader.close();
+
+            JsonArray commits = new JsonParser().parse(response.toString()).getAsJsonArray();
+            if (commits.size() > 0) {
+                return commits.get(0).getAsJsonObject().get("author_name").getAsString();
+            }
+        } catch (Exception e) {
+            System.out.println("Fehler beim Abrufen des Autors: " + e.getMessage());
+        }
+        return "Unbekannt";
+    }
+
+    public static String ermittleSprache(String code) {
         code = code.toLowerCase();
         Map<String, List<String>> languageKeywords = new HashMap<>();
         languageKeywords.put("Python", Arrays.asList("def ", "import ", "print(", "self", "none", "elif", "except"));
@@ -88,9 +162,7 @@ public class GitRepoEigenschaften {
 
         for (Map.Entry<String, List<String>> entry : languageKeywords.entrySet()) {
             for (String keyword : entry.getValue()) {
-                if (code.contains(keyword)) {
-                    return entry.getKey();
-                }
+                if (code.contains(keyword)) return entry.getKey();
             }
         }
         return "Unbekannt";
