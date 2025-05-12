@@ -238,7 +238,33 @@ public class GitRepoEigenschaften {
             System.err.println("Fehler beim Abrufen der .gitattributes - Datei:" + e.getMessage());
         }
     }
+    
+  public static void ermittelnTags(String projectPath, String privateToken) {
+    //Diese Methode ermittelt den Tags (z. B. Releases wie v1.0.0)
+        try {
+            // HTTP-Verbindung aufbauen
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/tags", privateToken);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) response.append(line);
+            reader.close();
 
+            // JSON-Antwort 
+            JsonArray tags = JsonParser.parseString(response.toString()).getAsJsonArray();
+            System.out.println("Gefundene Tags:");
+            for (JsonElement element : tags) {
+                JsonObject tag = element.getAsJsonObject();
+                String tagName = tag.get("name").getAsString();
+                System.out.println("• " + tagName);
+            }
+
+        } catch (Exception e) {
+            System.out.println("Fehler beim Abrufen von Tags: " + e.getMessage());
+        }
+    }
+
+    
 
     
 
