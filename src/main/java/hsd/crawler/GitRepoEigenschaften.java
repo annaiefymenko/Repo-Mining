@@ -167,4 +167,28 @@ public class GitRepoEigenschaften {
         }
         return "Unbekannt";
     }
+    
+    public static void listSubmodules(String projectPath, String privateToken) {
+        try {
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/submodules", privateToken);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String zeile;
+
+            while ((zeile = reader.readLine()) != null) {
+                response.append(zeile);
+            }
+            reader.close();
+
+            // Anzahl der Submodule ausgeben
+            System.out.println("Anzahl der Submodule im Repository: " + submodulesArray.length());
+
+            } catch (Exception e) {
+            System.err.println("Fehler beim Abrufen der Submodule:"  + e.getMessage());
+            
+        }
+
+    }
+    
+
 }

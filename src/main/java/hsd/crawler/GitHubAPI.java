@@ -1,7 +1,7 @@
 
 
 //NUR FÜR GITHUB NICHT GITLAB
-kkjkjkjkjkjkj
+
 package hsd.crawler;
 
 import com.google.gson.*;
