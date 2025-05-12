@@ -50,6 +50,8 @@ public class Main {
             repo.branches = GitRepoEigenschaften.ermittleAnzahlBranches(repo.name, token);
             repo.files = GitRepoEigenschaften.countFiles(repo.name, token);
             repo.lastModified = GitRepoEigenschaften.ermittleLetztesAenderungsdatum(repo.name, token);
+            repo.submodules = GitRepoEigenschaften.listSubmodules(repo.name, token);
+            repo.
             //repo.authors = GitRepoEigenschaften.ermittleAutoren(repo.name, token);
 
             System.out.println("→ Commits: " + repo.commits);

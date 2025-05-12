@@ -169,33 +169,40 @@ public class GitRepoEigenschaften {
     }
     
     public static void listSubmodules(String projectPath, String privateToken) {
+    try {
+        HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/submodules", privateToken);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        StringBuilder response = new StringBuilder();
+        String zeile;
 
-        try {
-            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/submodules", privateToken);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            StringBuilder response = new StringBuilder();
-            String zeile;
-
-            while ((zeile = reader.readLine()) != null) {
-                response.append(zeile);
-            }
-            reader.close();
-
-            // Anzahl der Submodule ausgeben
-            System.out.println("Anzahl der Submodule im Repository: " + submodulesArray.length());
-
-            } catch (Exception e) {
-            System.err.println("Fehler beim Abrufen der Submodule:"  + e.getMessage());
-            
+        while ((zeile = reader.readLine()) != null) {
+            response.append(zeile);
         }
+        reader.close();
 
+        // JSON-Antwort 
+        JsonArray submodulesArray = new JsonArray(response.toString());
+
+        // Anzahl der Submodule ausgeben
+        System.out.println("Anzahl der Submodule im Repository: " + submodulesArray.length());
+
+        // Optional: Details der Submodule ausgeben
+        for (int i = 0; i < submodulesArray.length(); i++) {
+            JsonObject submodule = submodulesArray.getJsonObject(i);
+            System.out.println("Submodule: " + submodule.getString("path"));
+        }
+      
+    } catch (Exception e) {
+        System.err.println("Vermutlich haben Sie keine Submodulen oder es wurde ein Fehler aufgetreten: " + e.getMessage());
     }
+}
 
     public static void findGitignore(String projectPath, String privateToken) {
         //Wir überprüfen damit, ob .gitatignore Datei vorhanden ist 
         try {
+            String fileName = ".gitignore";
             // HTTP-Verbindung zur .gitignore-API aufbauen
-            HttpURLConnection conn = erzeugeVerbindung(projectPath, privateToken);
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/.gitignore", privateToken);
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             StringBuilder response = new StringBuilder();
             String zeile;
@@ -219,7 +226,7 @@ public class GitRepoEigenschaften {
         //Wir überprüfen damit, ob .gitattributes Datei vorhanden ist 
         try {
             // HTTP-Verbindung zur .gitattributes - API aufbauen
-            HttpURLConnection conn = erzeugeVerbindung(projectPath, privateToken);
+            HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/.gitattributes", privateToken);
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             StringBuilder response = new StringBuilder();
             String zeile;
@@ -235,7 +242,7 @@ public class GitRepoEigenschaften {
             System.out.println(response.toString());
 
         } catch (Exception e) {
-            System.err.println("Fehler beim Abrufen der .gitattributes - Datei:" + e.getMessage());
+            System.err.println("Vermutlich haben Sie die .gitattributes Datei nicht aufgebaut oder es wurde ein Fehler beim Abrufen der .gitattributes - Datei aufgetreten:" + e.getMessage());
         }
     }
     
