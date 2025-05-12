@@ -169,6 +169,7 @@ public class GitRepoEigenschaften {
     }
     
     public static void listSubmodules(String projectPath, String privateToken) {
+
         try {
             HttpURLConnection conn = erzeugeVerbindung(projectPath + "/repository/submodules", privateToken);
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
@@ -189,6 +190,56 @@ public class GitRepoEigenschaften {
         }
 
     }
+
+    public static void findGitignore(String projectPath, String privateToken) {
+        //Wir überprüfen damit, ob .gitatignore Datei vorhanden ist 
+        try {
+            // HTTP-Verbindung zur .gitignore-API aufbauen
+            HttpURLConnection conn = erzeugeVerbindung(projectPath, privateToken);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String zeile;
+
+            // Lese den InputStream und baue den Response-String auf
+            while ((zeile = reader.readLine()) != null) {
+                response.append(zeile);
+            }
+            reader.close();
+
+            // Überprüfe die Antwort und gib sie aus
+            System.out.println(".gitignore Inhalt:");
+            System.out.println(response.toString());
+
+        } catch (Exception e) {
+            System.err.println("Fehler beim Abrufen der .gitignore-Datei:" + e.getMessage());
+        }
+    }
+
+    public static void findGitAttributes(String projectPath, String privateToken) {
+        //Wir überprüfen damit, ob .gitattributes Datei vorhanden ist 
+        try {
+            // HTTP-Verbindung zur .gitattributes - API aufbauen
+            HttpURLConnection conn = erzeugeVerbindung(projectPath, privateToken);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            StringBuilder response = new StringBuilder();
+            String zeile;
+
+            // Lese den InputStream und baue den Response-String auf
+            while ((zeile = reader.readLine()) != null) {
+                response.append(zeile);
+            }
+            reader.close();
+
+            // Überprüfe die Antwort und gib sie aus
+            System.out.println(".gitattributes Inhalt:");
+            System.out.println(response.toString());
+
+        } catch (Exception e) {
+            System.err.println("Fehler beim Abrufen der .gitattributes - Datei:" + e.getMessage());
+        }
+    }
+
+
     
 
 }
